@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-shade-5);
+}
+
+.icon {
+  height: 1.25rem;
+  margin: 0.25rem;
+}
+
+.title {
+  margin: 0.25rem;
+  font-size: 0.75rem;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.actions {
+  align-self: stretch;
+  display: flex;
+}
+
+.action {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.action:hover {
+  background-color: var(--color-shade-4);
+}
+
+.exit {
+  composes: action;
+}
+
+.exit:hover {
+  background-color: var(--color-alert);
+}

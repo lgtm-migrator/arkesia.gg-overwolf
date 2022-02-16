@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-shade-1: #fff;
+  --color-shade-2: #e0e0e0;
+  --color-shade-3: #3b3b3b;
+  --color-shade-4: #303030;
+  --color-shade-5: #222222;
+  --color-alert: #be0000;
+}
+
+body {
+  margin: 0;
+  color: var(--color-shade-1);
+  background-color: var(--color-shade-3);
+  user-select: none;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  color: var(--color-shade-2);
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: var(--color-shade-1);
+}
