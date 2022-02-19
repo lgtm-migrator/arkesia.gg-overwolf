@@ -5,7 +5,7 @@ function App() {
   return (
     <div className={styles.container}>
       <AppHeader />
-      <iframe className={styles.iframe} src="http://172.22.209.248:3000/" />
+      <iframe className={styles.iframe} src={import.meta.env.VITE_APP_WEB} />
     </div>
   );
 }
