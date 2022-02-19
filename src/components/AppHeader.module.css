@@ -27,7 +27,12 @@
   align-items: center;
 }
 
-.action:hover {
+.action:disabled {
+  cursor: default;
+  color: var(--color-shade-3);
+}
+
+.action:hover:not(:disabled) {
   background-color: var(--color-shade-4);
 }
 

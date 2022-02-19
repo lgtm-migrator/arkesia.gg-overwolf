@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { getCurrentWindow } from "./windows";
 
-function useWindowState() {
-  const [windowState, setWindowState] =
-    useState<overwolf.windows.WindowStateEx>(
-      () => "normal" as overwolf.windows.WindowStateEx
-    );
+function useWindowInfo() {
+  const [windowInfo, setWindowInfo] =
+    useState<overwolf.windows.WindowInfo | null>(null);
 
   useEffect(() => {
     async function handleWindowStateChanged(
@@ -15,20 +13,20 @@ function useWindowState() {
       if (currentWindow.id !== state.window_id) {
         return;
       }
-      setWindowState(state.window_state_ex);
+      if (state.window_previous_state_ex !== state.window_state_ex) {
+        getCurrentWindow().then(setWindowInfo);
+      }
     }
 
     overwolf.windows.onStateChanged.addListener(handleWindowStateChanged);
 
-    getCurrentWindow().then((currentWindow) => {
-      setWindowState(currentWindow.stateEx);
-    });
+    getCurrentWindow().then(setWindowInfo);
     return () => {
       overwolf.windows.onStateChanged.removeListener(handleWindowStateChanged);
     };
   }, []);
 
-  return windowState;
+  return windowInfo;
 }
 
-export default useWindowState;
+export default useWindowInfo;
