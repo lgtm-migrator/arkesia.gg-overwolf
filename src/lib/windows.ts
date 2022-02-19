@@ -7,14 +7,10 @@ export const WINDOWS = {
   CONTROLLER: "controller",
 };
 
-let currentWindow: overwolf.windows.WindowInfo | null = null;
 export async function getCurrentWindow(): Promise<overwolf.windows.WindowInfo> {
-  if (!currentWindow) {
-    currentWindow = await new Promise<overwolf.windows.WindowInfo>((resolve) =>
-      overwolf.windows.getCurrentWindow((result) => resolve(result.window))
-    );
-  }
-  return currentWindow;
+  return new Promise<overwolf.windows.WindowInfo>((resolve) =>
+    overwolf.windows.getCurrentWindow((result) => resolve(result.window))
+  );
 }
 
 const declaredWindows: {

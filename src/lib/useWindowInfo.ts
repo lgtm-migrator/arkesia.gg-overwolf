@@ -14,7 +14,7 @@ function useWindowInfo() {
         return;
       }
       if (state.window_previous_state_ex !== state.window_state_ex) {
-        getCurrentWindow().then(setWindowInfo);
+        setWindowInfo(currentWindow);
       }
     }
 
