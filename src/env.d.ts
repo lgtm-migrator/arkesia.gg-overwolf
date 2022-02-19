@@ -2,7 +2,6 @@
 /// <reference types="@overwolf/types" />
 
 interface ImportMetaEnv {
-  readonly VITE_APP_LOST_ARK_CLASS_ID: number;
   readonly VITE_APP_WEB: string;
   // more env variables...
 }

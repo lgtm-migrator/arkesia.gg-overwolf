@@ -25,10 +25,7 @@ function AppHeader() {
         <button
           className={styles.action}
           onClick={togglePreferedWindow}
-          disabled={
-            runningGameInfo?.classId !==
-            +import.meta.env.VITE_APP_LOST_ARK_CLASS_ID
-          }
+          disabled={runningGameInfo?.classId !== 21864}
         >
           <Icon
             icon={

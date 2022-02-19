@@ -18,10 +18,9 @@ If you don't want to open https://arkesia.gg in the app, you need to override th
 
 The following list shows all environemnt variables:
 
-| KEY                        | VALUE                                            |
-| -------------------------- | ------------------------------------------------ |
-| VITE_APP_LOST_ARK_CLASS_ID | Used by Overwolf to identify the game            |
-| VITE_APP_WEB               | Website which will be embed as iframe in the app |
+| KEY          | VALUE                                            |
+| ------------ | ------------------------------------------------ |
+| VITE_APP_WEB | Website which will be embed as iframe in the app |
 
 ### Development
 

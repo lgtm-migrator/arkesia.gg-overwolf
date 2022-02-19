@@ -12,7 +12,7 @@ import {
 
 waitForOverwolf().then(() => {
   initController({
-    gameId: +import.meta.env.VITE_APP_LOST_ARK_CLASS_ID,
+    gameId: 21864,
     hotkey: "show_hide_app",
   });
 });
