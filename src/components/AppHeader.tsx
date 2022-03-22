@@ -20,7 +20,15 @@ function AppHeader() {
   const showHideAppHotkeyBinding = useHotkeyBinding("show_hide_app");
 
   return (
-    <header className={styles.header} onMouseDown={dragMoveWindow}>
+    <header
+      className={styles.header}
+      onMouseDown={dragMoveWindow}
+      onDoubleClick={
+        windowInfo?.stateEx === "maximized"
+          ? restoreCurrentWindow
+          : maximizeCurrentWindow
+      }
+    >
       <div className={styles.flex}>
         <img src={iconSrc} alt="" className={styles.icon} />
         <h1 className={styles.title}>Arkesia.gg</h1>
