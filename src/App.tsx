@@ -8,6 +8,7 @@ function App() {
       <AppHeader />
       <ResizeBorders />
       <iframe className={styles.iframe} src={import.meta.env.VITE_APP_WEB} />
+      <div className={styles.loading}>Loading map...</div>
     </div>
   );
 }

@@ -9,3 +9,11 @@
   height: 100%;
   border: none;
 }
+
+.loading {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+}
