@@ -25,6 +25,7 @@
   flex: 1;
   font-size: 0.75rem;
 }
+
 .chip {
   margin-left: 8px;
   padding: 2px 4px;
@@ -37,6 +38,7 @@
 .actions {
   justify-self: end;
   display: flex;
+  height: 100%;
 }
 
 .action {

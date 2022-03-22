@@ -38,6 +38,7 @@ function AppHeader() {
         <a
           className={styles.chip}
           href="overwolf://settings/games-overlay?hotkey=show_hide_app&gameId=21864"
+          title="Change hotkey"
         >
           {showHideAppHotkeyBinding.toUpperCase()}
         </a>
@@ -47,6 +48,7 @@ function AppHeader() {
           className={styles.action}
           onClick={togglePreferedWindow}
           disabled={runningGameInfo?.classId !== 21864}
+          title="Switch between overlay and second screen mode"
         >
           <Icon
             icon={
@@ -56,7 +58,11 @@ function AppHeader() {
             }
           />
         </button>
-        <button className={styles.action} onClick={minimizeCurrentWindow}>
+        <button
+          className={styles.action}
+          onClick={minimizeCurrentWindow}
+          title="Minimize window"
+        >
           <Icon icon="codicon:chrome-minimize" />
         </button>
         <button
@@ -65,6 +71,11 @@ function AppHeader() {
             windowInfo?.stateEx === "maximized"
               ? restoreCurrentWindow
               : maximizeCurrentWindow
+          }
+          title={
+            windowInfo?.stateEx === "maximized"
+              ? "Restore window"
+              : "Maximize window"
           }
         >
           <Icon
@@ -75,7 +86,11 @@ function AppHeader() {
             }
           />
         </button>
-        <button className={styles.exit} onClick={closeMainWindow}>
+        <button
+          className={styles.exit}
+          onClick={closeMainWindow}
+          title="Close app"
+        >
           <Icon icon="codicon:chrome-close" />
         </button>
       </div>
