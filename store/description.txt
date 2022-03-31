@@ -1,0 +1,11 @@
+### Arkesia.gg
+
+Don't get lost and use Arkesia.gg to display an interactive map on second screen or as overlay in-game.
+
+### Features
+
+- Spotlight search to quickly find nodes and regions
+- Mokoko seeds, hidden stories, NPCs and more
+- Community manages nodes (Join our [Discord](https://discord.com/invite/NTZu8Px))
+- Open Source ([GitHub](https://github.com/lmachens/arkesia.gg-web))
+- Auto start with Lost Ark
