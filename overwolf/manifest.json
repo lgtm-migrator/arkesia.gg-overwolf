@@ -4,7 +4,7 @@
   "meta": {
     "name": "Arkesia.gg",
     "author": "Leon Machens",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "minimum-overwolf-version": "0.190.0",
     "description": "Lost Ark Interactive Map",
     "dock_button_title": "Arkesia.gg",
@@ -35,8 +35,8 @@
           "height": 600
         },
         "min_size": {
-          "width": 400,
-          "height": 300
+          "width": 600,
+          "height": 500
         },
         "allow_local_file_access": true,
         "popup_blocker": true,
@@ -59,8 +59,8 @@
           "height": 600
         },
         "min_size": {
-          "width": 400,
-          "height": 300
+          "width": 600,
+          "height": 500
         },
         "allow_local_file_access": true,
         "popup_blocker": true,
@@ -87,7 +87,7 @@
       "show_hide_app": {
         "title": "Show/Hide App",
         "action-type": "custom",
-        "default": "F4"
+        "default": "Ctrl+x"
       }
     },
     "protocol_override_domains": {
