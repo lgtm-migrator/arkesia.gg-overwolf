@@ -2,7 +2,7 @@
   "manifest_version": 1,
   "type": "WebApp",
   "meta": {
-    "name": "Arkesia.gg-dev",
+    "name": "Arkesia.gg",
     "author": "Leon Machens",
     "version": "0.2.0",
     "minimum-overwolf-version": "0.190.0",
