@@ -1,14 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "./global.css";
 import App from "./App";
 import { waitForOverwolf } from "./lib/overwolf";
 
+const container = document.getElementById("root");
+const root = createRoot(container!);
+
 waitForOverwolf().then(() => {
-  ReactDOM.render(
-    <React.StrictMode>
+  root.render(
+    <StrictMode>
       <App />
-    </React.StrictMode>,
-    document.getElementById("root")
+    </StrictMode>
   );
 });
